@@ -5,6 +5,10 @@
 
       <fieldset class="inputs">
         <legend><span>Images</span></legend>
+        <script type="txt/javascript">
+          $('#uploaded_images').load('/admin/images/wysiwyg_image_list');
+        </script>
+        <div id="uploaded_images"></div>
         <ol>
           <li id="media_image_url_input" class="string input optional stringish">
             <label class="label" for="media_image_url"><input name="media_type" type="radio" value="image_url" checked="checked"/>URL</label>
