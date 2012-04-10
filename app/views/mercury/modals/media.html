@@ -3,18 +3,30 @@
   <div class="mercury-display-pane-container">
     <div class="mercury-display-pane">
 
-      <fieldset class="inputs">
+      <fieldset class="buttons">
         <legend><span>Image List</span></legend>
         <ol>
           <li id="" class="string input optional stringish">
             
+            <ol>
+              <li class="commit button">
+                <label class="label" for="image_list_width">
+                  Width: 
+                  <input class="selectable" name="image_list_width">
+                </label>
+                <label class="label" for="image_list_height">
+                  Height:
+                  <input class="selectable" name="image_list_height">
+                </label>
+                <input class="submit" type="reset" onclick="load_images();return false;" value="Load Images" />
+              </li>
+            </ol>
             <div id="uploaded_images">
             
-              <ol>
-                <li class="commit button"><input class="submit" type="reset" onclick="load_images();return false;" value="Load Images" /></li>
-              </ol>
+
               
             </div>
+            
           </li>
         </ol>
       </fieldset>
