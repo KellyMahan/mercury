@@ -4,8 +4,25 @@
     <div class="mercury-display-pane">
 
       <fieldset class="inputs">
+        <legend><span>Image List</span></legend>
+        <ol>
+          <li id="" class="string input optional stringish">
+            
+            <div id="uploaded_images">
+            
+              <ol>
+                <li class="commit button"><input class="submit" type="reset" onclick="load_images();return false;" value="Load Images" /></li>
+              </ol>
+              
+            </div>
+          </li>
+        </ol>
+      </fieldset>
+
+
+
+      <fieldset class="inputs">
         <legend><span>Images</span></legend>
-        <div id="uploaded_images"></div>
         <ol>
           <li id="media_image_url_input" class="string input optional stringish">
             <label class="label" for="media_image_url"><input name="media_type" type="radio" value="image_url" checked="checked"/>URL</label>
